@@ -99,4 +99,3 @@ add2 a b = decodenat (evaltotp rec)
     g   = codenat b
     e   = codenat a
     rec = Primrec e g h
-Vimium has been updated to 1.48.×

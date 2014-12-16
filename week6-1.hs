@@ -169,4 +169,3 @@ filterBranch (Branch (UIdent value) exp) = value ++ " -> " ++ (pp exp)
 filterIdent :: [LIdent] -> [String]
 filterIdent [] = []
 filterIdent ((LIdent v):xs) = v : (filterIdent xs)
-Vimium has been updated to 1.48.×

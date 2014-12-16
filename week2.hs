@@ -107,4 +107,3 @@ zrec (Pos Zero) d e = d
 zrec (Neg Zero) d e = d
 zrec (Neg (Succ x)) d e = zrec (Neg x) d e
 zrec (Pos (Succ x)) d e = zrec (Pos x) d e
-Vimium has been updated to 1.48.×

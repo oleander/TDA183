@@ -68,4 +68,3 @@ mul = Rec (Compose Zero []) (Compose add [Proj 1, Proj 2])
 fact = Rec (Compose Succ [Zero])
          (Compose mul [Compose Succ [Proj 0],
                            Proj 1])
-Vimium has been updated to 1.48.×
