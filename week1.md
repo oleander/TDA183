@@ -2,9 +2,9 @@
 
 ## 1
 
-`f : A -› B to be injective if (forall y:B)(forall x:A) f(x) = f(y) ==> x = y`
-`f : A -› B is a total function if (forall x:A) (exists y:B) f(x) = y`
-`f : A -› B is a partial function if (exists x:A) (exists y:B) f(x) = y`
+- f : A -› B to be injective if (forall y:B)(forall x:A) f(x) = f(y) ==> x = y
+- f : A -› B is a total function if (forall x:A) (exists y:B) f(x) = y
+- f : A -› B is a partial function if (exists x:A) (exists y:B) f(x) = y
 
 ## 2
 
