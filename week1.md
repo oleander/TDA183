@@ -2,9 +2,12 @@
 
 ## 1
 
-- f : A -› B to be injective if (forall y:B)(forall x:A) f(x) = f(y) ==> x = y
-- f : A -› B is a total function if (forall x:A) (exists y:B) f(x) = y
-- f : A -› B is a partial function if (exists x:A) (exists y:B) f(x) = y
+Let f be a function whose domain is a set A. The function f is injective if and only if for all a and b in A, if f(a) = f(b), then a = b; that is, f(a) = f(b) implies a = b.  Equivalently, if a ≠ b, then f(a) ≠ f(b).
+Or in predicate logic  (forall a,b:A) f(a) = f(b) => a = b, which is logically equivalent to the contrapositive  (forall a,b:A) a ≠ b => f(a) ≠ f(b).
+
+A partial function f : A ↛ B is a function f : A' → B, for some subset A' of A. It generalizes the concept of a function f : A → B by not forcing f to map every element of A to an element of B (only some subset A' of A).
+
+If A' = A, then f is called a total function and is equivalent to a function.
 
 ## 2
 
@@ -31,16 +34,9 @@ dia(i) + n == T[a][b]
 
 This shows that all values are already in our table no matter what rational number we assign n thus proving that all rational numbers are enumerable.
 
-## 3.A
+## 3
 
-A C program can be represented as a list of binary values, which in it self is a list of numbers. Which means that've a set of all functions from C programs -> N. By definition any set that injects into N is countable, thus showing that all C programs are enumerable.
+While having “a subset of an enumerable set is enumerable” in mind the following should be true:
+Programs are stored in the computer as a text string, each character having its ascii code. We can look at this string as a binary number. So each program can be seen as a number, hence the set of all programs can be seen as a subset of all natural numbers. Hence it must be enumerable.
 
-
-## 3.B
-
-We need to show that not all functions can be expressed as programs by disproving N -> programs.
-Again, all programs is a subset of N, and N -> N is not enumerable, which means that N ->
-programs isn't eather. We know this as there will be more missing values in our table when using
-the diagonalization argument on N -> programs as all programs are a subset of all numbers.
-Proving that N -> N is not enumerable can be done using the diagonalization argument. dia(i) +
-1 will not be part of the set f_i(n) for all n in N and for all i in N.
+The set N -> N is not countable. If it were, we could find an enumeration f1, f2, …, of all its elements. But then the function defined by diag(i) = fi(i) + 1 cannot be in the set, since if it were, we must have that diag = fj, for some number j. But this is impossible, since diag(j) != fj(j). This diagonalization argument shows that there are more functions in N -> N than programs taking a natural number to a natural number.
